@@ -1,0 +1,11 @@
+Started on Aug 27, 2019 9:23:59 AM
+Started by event from 140.82.115.66 ⇒ http://54.201.254.204:8080/github-webhook/ on Tue Aug 27 09:23:59 UTC 2019
+Using strategy: Default
+[poll] Last Built Revision: Revision 040955b921761641ea8245ce644ede071d7dc061 (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/jani1502/autoscaliing-withansible.git # timeout=10
+Found 1 remote heads on https://github.com/jani1502/autoscaliing-withansible.git
+[poll] Latest remote head revision on refs/heads/master is: ec3ecc255b7260607f683e5f1bb5c5515ebe563b
+Done. Took 0.19 sec
+Changes found

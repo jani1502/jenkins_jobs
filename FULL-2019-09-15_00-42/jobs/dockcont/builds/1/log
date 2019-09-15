@@ -1,0 +1,13 @@
+Started by upstream project "[8mha:////4IVb8JuKqj3O9wTR5mXZJ28zHrGjbzQIcmPnU1tf1/m2AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/az8JP2U/OTs1KLM3MT0VH0AKIYoP8YAAAA=[0mdockerimage" build number [8mha:////4Fx4FBBwOqgigGSiyPikXCDbInxNIxmckZQBhsEqx46LAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQAygGfpZ+Un6KfnJ2alFmbmJ6an6pgD7wn6FxwAAAA==[0m5
+originally caused by:
+ Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/dockcont
+[dockcont] $ /bin/sh -xe /tmp/jenkins6121080625341360847.sh
++ cd /home/jenkins/
++ sudo docker run --name c1 -d -p 8081:8080 jani1502/mynewimage:1
+Unable to find image 'jani1502/mynewimage:1' locally
+docker: Error response from daemon: manifest for jani1502/mynewimage:1 not found.
+See 'docker run --help'.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

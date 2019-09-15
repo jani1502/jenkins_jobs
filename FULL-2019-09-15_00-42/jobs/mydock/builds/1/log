@@ -1,0 +1,27 @@
+Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/mydock
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/jani1502/Dockerfile.git
+ > git init /home/jenkins/workspace/mydock # timeout=10
+Fetching upstream changes from https://github.com/jani1502/Dockerfile.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/Dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jani1502/Dockerfile.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jani1502/Dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/Dockerfile.git
+ > git fetch --tags --progress https://github.com/jani1502/Dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7a03851b919fc75921f8eba78a7233db747f3359 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7a03851b919fc75921f8eba78a7233db747f3359
+Commit message: "kka"
+First time build. Skipping changelog.
+[mydock] $ /bin/sh -xe /tmp/jenkins367975541807094423.sh
++ sudo cd /home/jenkins/workspace/Dockerfile
+sudo: cd: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,26 @@
+Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/ec2module
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[ec2module] $ /bin/sh -xe /tmp/jenkins438391823207536379.sh
++ cd /home/jenkins/
++ ansible-playbook ec2.yml
+ [WARNING]: provided hosts list is empty, only localhost is available. Note
+that the implicit localhost does not match 'all'
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [i want to create ec2 instance] *******************************************
+An exception occurred during task execution. To see the full traceback, use -vvv. The error was: <Response><Errors><Error><Code>InvalidSubnetID.NotFound</Code><Message>The subnet ID 'vpc-29ef4551' does not exist</Message></Error></Errors><RequestID>cc7993f3-7816-4af2-b881-d9c599ee9375</RequestID></Response>
+fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "Traceback (most recent call last):\n  File \"/home/jenkins/.ansible/tmp/ansible-tmp-1566743237.73-125857672551669/AnsiballZ_ec2.py\", line 114, in <module>\n    _ansiballz_main()\n  File \"/home/jenkins/.ansible/tmp/ansible-tmp-1566743237.73-125857672551669/AnsiballZ_ec2.py\", line 106, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \"/home/jenkins/.ansible/tmp/ansible-tmp-1566743237.73-125857672551669/AnsiballZ_ec2.py\", line 49, in invoke_module\n    imp.load_module('__main__', mod, module, MOD_DESC)\n  File \"/tmp/ansible_ec2_payload_8npl95/__main__.py\", line 1731, in <module>\n  File \"/tmp/ansible_ec2_payload_8npl95/__main__.py\", line 1715, in main\n  File \"/tmp/ansible_ec2_payload_8npl95/__main__.py\", line 1017, in create_instances\n  File \"/usr/local/lib/python2.7/dist-packages/boto/vpc/__init__.py\", line 1152, in get_all_subnets\n    return self.get_list('DescribeSubnets', params, [('item', Subnet)])\n  File \"/usr/local/lib/python2.7/dist-packages/boto/connection.py\", line 1186, in get_list\n    raise self.ResponseError(response.status, response.reason, body)\nboto.exception.EC2ResponseError: EC2ResponseError: 400 Bad Request\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Response><Errors><Error><Code>InvalidSubnetID.NotFound</Code><Message>The subnet ID 'vpc-29ef4551' does not exist</Message></Error></Errors><RequestID>cc7993f3-7816-4af2-b881-d9c599ee9375</RequestID></Response>\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

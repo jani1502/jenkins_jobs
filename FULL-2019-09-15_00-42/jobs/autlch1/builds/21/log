@@ -1,0 +1,124 @@
+Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/autlch1
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/jani1502/autoscaliing-withansible.git
+ > git init /home/jenkins/workspace/autlch1 # timeout=10
+Fetching upstream changes from https://github.com/jani1502/autoscaliing-withansible.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/autoscaliing-withansible.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jani1502/autoscaliing-withansible.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jani1502/autoscaliing-withansible.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/autoscaliing-withansible.git
+ > git fetch --tags --progress https://github.com/jani1502/autoscaliing-withansible.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 6fb11c5960caf21983197ff11a847d3a49e43e99 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6fb11c5960caf21983197ff11a847d3a49e43e99
+Commit message: "new"
+ > git rev-list --no-walk 6fb11c5960caf21983197ff11a847d3a49e43e99 # timeout=10
+[autlch1] $ /bin/sh -xe /tmp/jenkins8195562013829487986.sh
++ cd /home/jenkins/workspace/autlch1/
++ ansible all launchconfig.yml
+Usage: ansible <host-pattern> [options]
+
+Define and run a single task 'playbook' against a set of hosts
+
+Options:
+  -a MODULE_ARGS, --args=MODULE_ARGS
+                        module arguments
+  --ask-vault-pass      ask for vault password
+  -B SECONDS, --background=SECONDS
+                        run asynchronously, failing after X seconds
+                        (default=N/A)
+  -C, --check           don't make any changes; instead, try to predict some
+                        of the changes that may occur
+  -D, --diff            when changing (small) files and templates, show the
+                        differences in those files; works great with --check
+  -e EXTRA_VARS, --extra-vars=EXTRA_VARS
+                        set additional variables as key=value or YAML/JSON, if
+                        filename prepend with @
+  -f FORKS, --forks=FORKS
+                        specify number of parallel processes to use
+                        (default=5)
+  -h, --help            show this help message and exit
+  -i INVENTORY, --inventory=INVENTORY, --inventory-file=INVENTORY
+                        specify inventory host path or comma separated host
+                        list. --inventory-file is deprecated
+  -l SUBSET, --limit=SUBSET
+                        further limit selected hosts to an additional pattern
+  --list-hosts          outputs a list of matching hosts; does not execute
+                        anything else
+  -m MODULE_NAME, --module-name=MODULE_NAME
+                        module name to execute (default=command)
+  -M MODULE_PATH, --module-path=MODULE_PATH
+                        prepend colon-separated path(s) to module library (def
+                        ault=~/.ansible/plugins/modules:/usr/share/ansible/plu
+                        gins/modules)
+  -o, --one-line        condense output
+  --playbook-dir=BASEDIR
+                        Since this tool does not use playbooks, use this as a
+                        substitute playbook directory.This sets the relative
+                        path for many features including roles/ group_vars/
+                        etc.
+  -P POLL_INTERVAL, --poll=POLL_INTERVAL
+                        set the poll interval if using -B (default=15)
+  --syntax-check        perform a syntax check on the playbook, but do not
+                        execute it
+  -t TREE, --tree=TREE  log output to this directory
+  --vault-id=VAULT_IDS  the vault identity to use
+  --vault-password-file=VAULT_PASSWORD_FILES
+                        vault password file
+  -v, --verbose         verbose mode (-vvv for more, -vvvv to enable
+                        connection debugging)
+  --version             show program's version number, config file location,
+                        configured module search path, module location,
+                        executable location and exit
+
+  Privilege Escalation Options:
+    control how and which user you become as on target hosts
+
+    -b, --become        run operations with become (does not imply password
+                        prompting)
+    --become-method=BECOME_METHOD
+                        privilege escalation method to use (default=sudo), use
+                        `ansible-doc -t become -l` to list valid choices.
+    --become-user=BECOME_USER
+                        run operations as this user (default=root)
+    -K, --ask-become-pass
+                        ask for privilege escalation password
+
+  Connection Options:
+    control as whom and how to connect to hosts
+
+    -k, --ask-pass      ask for connection password
+    --private-key=PRIVATE_KEY_FILE, --key-file=PRIVATE_KEY_FILE
+                        use this file to authenticate the connection
+    -u REMOTE_USER, --user=REMOTE_USER
+                        connect as this user (default=None)
+    -c CONNECTION, --connection=CONNECTION
+                        connection type to use (default=smart)
+    -T TIMEOUT, --timeout=TIMEOUT
+                        override the connection timeout in seconds
+                        (default=10)
+    --ssh-common-args=SSH_COMMON_ARGS
+                        specify comERROR! Extraneous options or arguments
+mon arguments to pass to sftp/scp/ssh (e.g.
+                        ProxyCommand)
+    --sftp-extra-args=SFTP_EXTRA_ARGS
+                        specify extra arguments to pass to sftp only (e.g. -f,
+                        -l)
+    --scp-extra-args=SCP_EXTRA_ARGS
+                        specify extra arguments to pass to scp only (e.g. -l)
+    --ssh-extra-args=SSH_EXTRA_ARGS
+                        specify extra arguments to pass to ssh only (e.g. -R)
+
+Some modules do not make sense in Ad-Hoc (include, meta, etc)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,44 @@
+Started by GitHub push by jani1502
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/lunch1
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/jani1502/autoscaliing-withansible.git
+ > git init /home/jenkins/workspace/lunch1 # timeout=10
+Fetching upstream changes from https://github.com/jani1502/autoscaliing-withansible.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/autoscaliing-withansible.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jani1502/autoscaliing-withansible.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jani1502/autoscaliing-withansible.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/autoscaliing-withansible.git
+ > git fetch --tags --progress https://github.com/jani1502/autoscaliing-withansible.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 040955b921761641ea8245ce644ede071d7dc061 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 040955b921761641ea8245ce644ede071d7dc061
+Commit message: "dk"
+ > git rev-list --no-walk e2392b4bd763c01390b9f499dc8d75702cc03121 # timeout=10
+[lunch1] $ /bin/sh -xe /tmp/jenkins818803838708248787.sh
++ cd /home/jenkins/workspace/lunch1/
++ ansible-playbook launchconfig.yml
+ [WARNING]: provided hosts list is empty, only localhost is available. Note
+that the implicit localhost does not match 'all'
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [i want create ec2 launch configuration] **********************************
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Triggering a new build of [8mha:////4NirxnMugkXRr27a5+EQhonDCm3HHV4NXa8vObWqKk2qAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JP3UnKSc0rzkDCN9AAJ+E3zEAAAA[0melblunch2
+Finished: SUCCESS

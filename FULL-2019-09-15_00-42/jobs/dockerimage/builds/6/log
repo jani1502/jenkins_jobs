@@ -1,0 +1,84 @@
+Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/dockerimage
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jani1502/Dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/Dockerfile.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/Dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7a03851b919fc75921f8eba78a7233db747f3359 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7a03851b919fc75921f8eba78a7233db747f3359
+Commit message: "kka"
+ > git rev-list --no-walk 7a03851b919fc75921f8eba78a7233db747f3359 # timeout=10
+[dockerimage] $ /bin/sh -xe /tmp/jenkins4197046531559562867.sh
++ cd /home/jenkins/workspace/dockerimage
++ sudo docker build -t jani1502/mynewimage:6 .
+Sending build context to Docker daemon   59.9kB
+Step 1/6 : FROM tomcat:8.5.42-jdk8-openjdk
+ ---> 5377fd8533c3
+Step 2/6 : MAINTAINER janicharuku1503@gmail.com
+ ---> Using cache
+ ---> ddfdc8e7a2d9
+Step 3/6 : RUN apt-get update
+ ---> Using cache
+ ---> 834086790a0e
+Step 4/6 : ADD http://mirrors.jenkins.io/war-stable/latest/jenkins.war /usr/local/tomcat/webapps/
+
+ ---> Using cache
+ ---> da9c1e49a83b
+Step 5/6 : EXPOSE 8080
+ ---> Using cache
+ ---> 03a91db92484
+Step 6/6 : CMD ["catalina.sh","run"]
+ ---> Using cache
+ ---> dab04dadc53c
+Successfully built dab04dadc53c
+Successfully tagged jani1502/mynewimage:6
++ sudo docker login -u jani1502 -p 9030446858
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /home/jenkins/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
++ sudo docker push jani1502/mynewimage:6
+The push refers to repository [docker.io/jani1502/mynewimage]
+db10c9b45549: Preparing
+d0b3e3901482: Preparing
+a9cb876ed818: Preparing
+d48f2626d5ec: Preparing
+fa3b6a1ea5c4: Preparing
+51566e3f832b: Preparing
+51774d97c868: Preparing
+ea20c4bf3aae: Preparing
+2c8d31157b81: Preparing
+7b76d801397d: Preparing
+f32868cde90b: Preparing
+0db06dff9d9a: Preparing
+51566e3f832b: Waiting
+51774d97c868: Waiting
+ea20c4bf3aae: Waiting
+2c8d31157b81: Waiting
+7b76d801397d: Waiting
+f32868cde90b: Waiting
+0db06dff9d9a: Waiting
+d0b3e3901482: Layer already exists
+a9cb876ed818: Layer already exists
+d48f2626d5ec: Layer already exists
+fa3b6a1ea5c4: Layer already exists
+db10c9b45549: Layer already exists
+51566e3f832b: Layer already exists
+ea20c4bf3aae: Layer already exists
+51774d97c868: Layer already exists
+2c8d31157b81: Layer already exists
+7b76d801397d: Layer already exists
+0db06dff9d9a: Layer already exists
+f32868cde90b: Layer already exists
+6: digest: sha256:fd187a3d2728d8312e5a48d0ecf96cab5f31bad340a15f6f172037bae3b365c1 size: 2846
+Triggering a new build of [8mha:////4PLbsmNtk4ZLh1UHKgm8aSQxNvx6MZmTZqllwsa4MJQKAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/az8JP2U/ORsoPoSfQDyJ2FuwwAAAA==[0mdockcont
+Finished: SUCCESS

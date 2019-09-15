@@ -1,0 +1,12 @@
+Started by upstream project "[8mha:////4IVb8JuKqj3O9wTR5mXZJ28zHrGjbzQIcmPnU1tf1/m2AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/az8JP2U/OTs1KLM3MT0VH0AKIYoP8YAAAA=[0mdockerimage" build number [8mha:////4LWwEsyts8x1rbcJKVMJ815cX/wMJowxZxLJK1S7e1qoAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQAygGfpZ+Un6KfnJ2alFmbmJ6an6ZgBBk3ccxwAAAA==[0m6
+originally caused by:
+ Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/dockcont
+[dockcont] $ /bin/sh -xe /tmp/jenkins5550589911620736504.sh
++ cd /home/jenkins/
++ sudo docker run --name c1 -d -p 8081:8080 jani1502/mynewimage:2
+docker: Error response from daemon: Conflict. The container name "/c1" is already in use by container "14a106a2e1509797f2223e439a56a3dfdcbe9cfe954b21d2e94500f122da0163". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,64 @@
+Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/mynewpj
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jani1502/src.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/src.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/src.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 50e7dcd63781a094e5393283f41f6f082fdcd911 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 50e7dcd63781a094e5393283f41f6f082fdcd911
+Commit message: "jhs"
+ > git rev-list --no-walk 50e7dcd63781a094e5393283f41f6f082fdcd911 # timeout=10
+[mynewpj] $ mvn install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Account Registration Webapp 3.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ janakiLogin ---
+[8mha:////4LitOFfMMjjhexQsDBEetLYoIfQ0+exB0BNfblLCrhquAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 4 resources
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ janakiLogin ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4LitOFfMMjjhexQsDBEetLYoIfQ0+exB0BNfblLCrhquAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 11 source files to /var/lib/jenkins/workspace/mynewpj/target/classes
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ janakiLogin ---
+[8mha:////4LitOFfMMjjhexQsDBEetLYoIfQ0+exB0BNfblLCrhquAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/mynewpj/src/test/resources
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ janakiLogin ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ janakiLogin ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ janakiLogin ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [janakiLogin] in [/var/lib/jenkins/workspace/mynewpj/target/janakiLogin-3.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/mynewpj/src/main/webapp]
+[INFO] Webapp assembled in [192 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/mynewpj/target/janakiLogin-3.0.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ janakiLogin ---
+[INFO] Installing /var/lib/jenkins/workspace/mynewpj/target/janakiLogin-3.0.war to /var/lib/jenkins/.m2/repository/com/jani/janakiLogin/3.0/janakiLogin-3.0.war
+[INFO] Installing /var/lib/jenkins/workspace/mynewpj/pom.xml to /var/lib/jenkins/.m2/repository/com/jani/janakiLogin/3.0/janakiLogin-3.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.131 s
+[INFO] Finished at: 2019-07-21T08:01:14+00:00
+[INFO] Final Memory: 18M/44M
+[INFO] ------------------------------------------------------------------------
+Archiving artifacts
+Finished: SUCCESS

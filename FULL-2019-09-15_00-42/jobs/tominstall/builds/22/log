@@ -1,0 +1,38 @@
+Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/tominstall
+[tominstall] $ ansible-playbook /home/jenkins/tominstall.yml -i /home/jenkins/myhost -f 5
+ [WARNING]: While constructing a mapping from
+/home/jenkins/myrole/tasks/main.yml, line 27, column 5, found a duplicate dict
+key (notify). Using last defined value only.
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [172.31.18.168]
+
+TASK [myrole : install tomcat all nodes] ***************************************
+ok: [172.31.18.168]
+
+TASK [myrole : copy tomcat7 file] **********************************************
+ok: [172.31.18.168]
+
+TASK [myrole : i want to install multiple packages] ****************************
+[DEPRECATION WARNING]: Invoking "yum" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{ item }}"`, please use `name: ['tomcat-webapps', 
+'tomcat-admin-webapps']` and remove the loop. This feature will be removed in 
+version 2.11. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+ok: [172.31.18.168] => (item=[u'tomcat-webapps', u'tomcat-admin-webapps'])
+
+TASK [myrole : i want copy tomuser.xmlfile] ************************************
+ok: [172.31.18.168]
+
+TASK [myrole : i want to deploy warfile] ***************************************
+ok: [172.31.18.168]
+
+PLAY RECAP *********************************************************************
+172.31.18.168              : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Finished: SUCCESS

@@ -1,0 +1,101 @@
+Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/cont
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/jani1502/src_withbranches.git
+ > git init /home/jenkins/workspace/cont # timeout=10
+Fetching upstream changes from https://github.com/jani1502/src_withbranches.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/src_withbranches.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jani1502/src_withbranches.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jani1502/src_withbranches.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/src_withbranches.git
+ > git fetch --tags --progress https://github.com/jani1502/src_withbranches.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 70e82b3f321acb6f997fd70a7b0900d50fa98c63 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 70e82b3f321acb6f997fd70a7b0900d50fa98c63
+Commit message: "hjd"
+First time build. Skipping changelog.
+[cont] $ mvn clean install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Webapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom
+157/157 B               Downloaded: https://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom (157 B at 0.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.pom
+3/6 KB      5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.pom (6 KB at 53.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/glassfish/web/jsp/2.2/jsp-2.2.pom
+3/7 KB   5/7 KB   7/7 KB            Downloaded: https://repo.maven.apache.org/maven2/org/glassfish/web/jsp/2.2/jsp-2.2.pom (7 KB at 204.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar
+Downloading: https://repo.maven.apache.org/maven2/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.jar
+3/103 KB   5/103 KB   8/103 KB   11/103 KB   13/103 KB   16/103 KB   19/103 KB   21/103 KB   24/103 KB   27/103 KB   29/103 KB   32/103 KB   3/49 KB   32/103 KB   5/49 KB   32/103 KB   8/49 KB   32/103 KB   11/49 KB   32/103 KB   13/49 KB   32/103 KB   16/49 KB   32/103 KB   16/49 KB   36/103 KB   16/49 KB   40/103 KB   16/49 KB   44/103 KB   16/49 KB   48/103 KB   19/49 KB   48/103 KB   21/49 KB   48/103 KB   24/49 KB   48/103 KB   27/49 KB   48/103 KB   27/49 KB   52/103 KB   29/49 KB   56/103 KB   29/49 KB   60/103 KB   29/49 KB   52/103 KB   29/49 KB   64/103 KB   32/49 KB   68/103 KB   32/49 KB   72/103 KB   32/49 KB   64/103 KB   36/49 KB   72/103 KB   40/49 KB   72/103 KB   40/49 KB   76/103 KB   40/49 KB   80/103 KB   44/49 KB   80/103 KB   48/49 KB   80/103 KB   49/49 KB   84/103 KB   49/49 KB   88/103 KB   49/49 KB   92/103 KB   49/49 KB   84/103 KB   49/49 KB   96/103 KB   49/49 KB   100/103 KB   49/49 KB   103/103 KB                           Downloaded: https://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar (103 KB at 900.4 KB/sec)
+                        Downloaded: https://repo.maven.apache.org/maven2/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.jar (49 KB at 449.9 KB/sec)
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ webapp ---
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ webapp ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/cont/src/main/resources
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ webapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ webapp ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/cont/src/test/resources
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ webapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ webapp ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/jenkins/workspace/cont/target/surefire-reports
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.11/surefire-junit3-2.11.pom
+2/2 KB                           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.11/surefire-junit3-2.11.pom (2 KB at 59.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.11/surefire-junit3-2.11.jar
+3/26 KB   5/26 KB   8/26 KB   11/26 KB   13/26 KB   16/26 KB   19/26 KB   21/26 KB   24/26 KB   26/26 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.11/surefire-junit3-2.11.jar (26 KB at 714.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ webapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [webapp] in [/home/jenkins/workspace/cont/target/webapp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/jenkins/workspace/cont/src/main/webapp]
+[INFO] Webapp assembled in [37 msecs]
+[INFO] Building war: /home/jenkins/workspace/cont/target/webapp.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ webapp ---
+[INFO] Installing /home/jenkins/workspace/cont/target/webapp.war to /home/jenkins/.m2/repository/com/example/maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-SNAPSHOT.war
+[INFO] Installing /home/jenkins/workspace/cont/pom.xml to /home/jenkins/.m2/repository/com/example/maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.624 s
+[INFO] Finished at: 2019-09-10T09:18:19+00:00
+[INFO] Final Memory: 13M/32M
+[INFO] ------------------------------------------------------------------------
+SSH: Connecting from host [ip-172-31-26-10]
+SSH: Connecting with configuration [dockerhost] ...
+SSH: EXEC: STDOUT/STDERR from command [echo "sucess"] ...
+sucess
+SSH: EXEC: completed after 202 ms
+SSH: Disconnecting configuration [dockerhost] ...
+SSH: Transferred 0 file(s)
+Finished: SUCCESS

@@ -1,0 +1,43 @@
+Started by GitHub push by jani1502
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/sprint3
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/jani1502/src_withbranches.git
+ > git init /var/lib/jenkins/workspace/sprint3 # timeout=10
+Fetching upstream changes from https://github.com/jani1502/src_withbranches.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/src_withbranches.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jani1502/src_withbranches.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jani1502/src_withbranches.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/src_withbranches.git
+ > git fetch --tags --progress https://github.com/jani1502/src_withbranches.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/SPRINT3^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/SPRINT3^{commit} # timeout=10
+Checking out Revision bfcde131b4c35a3c95b39f99fade511e0932f81d (refs/remotes/origin/SPRINT3)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bfcde131b4c35a3c95b39f99fade511e0932f81d
+Commit message: "jahs"
+ > git rev-list --no-walk b9efc25bee8e78c27f2784f548af52397a22c5b1 # timeout=10
+[sprint3] $ mvn clean install
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.220 s
+[INFO] Finished at: 2019-09-05T10:08:28+00:00
+[INFO] Final Memory: 5M/15M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Pj1S5/k+foBngZNZZ5Pwqs3mekfmiWedq3EMSdW2M0BAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/var/lib/jenkins/workspace/sprint3). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[8mha:////4Pj1S5/k+foBngZNZZ5Pwqs3mekfmiWedq3EMSdW2M0BAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Pj1S5/k+foBngZNZZ5Pwqs3mekfmiWedq3EMSdW2M0BAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Pj1S5/k+foBngZNZZ5Pwqs3mekfmiWedq3EMSdW2M0BAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Pj1S5/k+foBngZNZZ5Pwqs3mekfmiWedq3EMSdW2M0BAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Pj1S5/k+foBngZNZZ5Pwqs3mekfmiWedq3EMSdW2M0BAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Pj1S5/k+foBngZNZZ5Pwqs3mekfmiWedq3EMSdW2M0BAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

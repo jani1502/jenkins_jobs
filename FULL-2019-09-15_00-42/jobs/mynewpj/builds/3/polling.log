@@ -1,0 +1,10 @@
+Started on Jul 21, 2019 8:00:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision fb0893769d80a924165b58787e71bbb0a5da5172 (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/jani1502/src.git # timeout=10
+Found 1 remote heads on https://github.com/jani1502/src.git
+[poll] Latest remote head revision on refs/heads/master is: 50e7dcd63781a094e5393283f41f6f082fdcd911
+Done. Took 0.3 sec
+Changes found

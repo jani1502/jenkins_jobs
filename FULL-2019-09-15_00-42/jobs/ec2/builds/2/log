@@ -1,0 +1,1753 @@
+Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/ec2
+[ec2] $ ansible-playbook /home/jenkins/ec2.yml -i /home/jenkins/ -f 5
+ [WARNING]:  * Failed to parse /home/jenkins/ec2.yml with auto plugin: no root
+'plugin' key found, '/home/jenkins/ec2.yml' is not a valid YAML inventory
+plugin config file
+ [WARNING]:  * Failed to parse /home/jenkins/ec2.yml with yaml plugin: YAML
+inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleSequence'>
+ [WARNING]:  * Failed to parse /home/jenkins/ec2.yml with ini plugin:
+/home/jenkins/ec2.yml:1: Expected key=value host variable assignment, got: ec2:
+ [WARNING]: Unable to parse /home/jenkins/ec2.yml as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/get-docker.sh with script plugin:
+problem running /home/jenkins/get-docker.sh --list ([Errno 13] Permission
+denied)
+ [WARNING]:  * Failed to parse /home/jenkins/get-docker.sh with ini plugin:
+/home/jenkins/get-docker.sh:2: Expected key=value host variable assignment,
+got: -e
+ [WARNING]: Unable to parse /home/jenkins/get-docker.sh as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/remoting/jarCache as an inventory
+source
+ [WARNING]:  * Failed to parse /home/jenkins/remoting/logs/remoting.log.0 with
+ini plugin: /home/jenkins/remoting/logs/remoting.log.0:1: Expected key=value
+host variable assignment, got: 22,
+ [WARNING]: Unable to parse /home/jenkins/remoting/logs/remoting.log.0 as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/remoting/logs/remoting.log.1 with
+ini plugin: /home/jenkins/remoting/logs/remoting.log.1:1: Expected key=value
+host variable assignment, got: 01,
+ [WARNING]: Unable to parse /home/jenkins/remoting/logs/remoting.log.1 as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/remoting/logs/remoting.log.2 with
+ini plugin: /home/jenkins/remoting/logs/remoting.log.2:1: Expected key=value
+host variable assignment, got: 22,
+ [WARNING]: Unable to parse /home/jenkins/remoting/logs/remoting.log.2 as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/remoting/logs/remoting.log.3 with
+ini plugin: /home/jenkins/remoting/logs/remoting.log.3:1: Expected key=value
+host variable assignment, got: 21,
+ [WARNING]: Unable to parse /home/jenkins/remoting/logs/remoting.log.3 as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/remoting.jar with ini plugin:
+'utf8' codec can't decode byte 0xb4 in position 50: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/remoting.jar as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/docker/Dockerfile with
+yaml plugin: YAML inventory has invalid structure, it should be a dictionary,
+got: <class 'ansible.parsing.yaml.objects.AnsibleUnicode'>
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/docker/Dockerfile with
+ini plugin: /home/jenkins/workspace/docker/Dockerfile:1: Expected key=value
+host variable assignment, got: tomcat:8.5.42-jdk8-openjdk
+ [WARNING]: Unable to parse /home/jenkins/workspace/docker/Dockerfile as an
+inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/docker as an inventory
+source
+ [WARNING]: Unable to parse /home/jenkins/workspace/ec2 as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/pom.xml with ini
+plugin: /home/jenkins/workspace/hello/pom.xml:8: Expected key=value host
+variable assignment, got: Registration
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/pom.xml as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/model/Role.java with ini plugin: /home/jenkins/workspace/he
+llo/src/main/java/com/hellokoding/account/model/Role.java:1: Expected key=value
+host variable assignment, got: com.hellokoding.account.model;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/model/Role.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/model/User.java with ini plugin: /home/jenkins/workspace/he
+llo/src/main/java/com/hellokoding/account/model/User.java:1: Expected key=value
+host variable assignment, got: com.hellokoding.account.model;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/model/User.java as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/java/com/hellokoding/account/model as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/repository/RoleRepository.java with ini plugin: /home/jenki
+ns/workspace/hello/src/main/java/com/hellokoding/account/repository/RoleReposit
+ory.java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.repository;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/repository/RoleRepository.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/repository/UserRepository.java with ini plugin: /home/jenki
+ns/workspace/hello/src/main/java/com/hellokoding/account/repository/UserReposit
+ory.java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.repository;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/repository/UserRepository.java as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/java/com/hellokoding/account/repository
+as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/service/SecurityService.java with ini plugin: /home/jenkins
+/workspace/hello/src/main/java/com/hellokoding/account/service/SecurityService.
+java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.service;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/service/SecurityService.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/service/SecurityServiceImpl.java with ini plugin: /home/jen
+kins/workspace/hello/src/main/java/com/hellokoding/account/service/SecurityServ
+iceImpl.java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.service;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/service/SecurityServiceImpl.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/service/UserDetailsServiceImpl.java with ini plugin: /home/
+jenkins/workspace/hello/src/main/java/com/hellokoding/account/service/UserDetai
+lsServiceImpl.java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.service;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/service/UserDetailsServiceImpl.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/service/UserService.java with ini plugin: /home/jenkins/wor
+kspace/hello/src/main/java/com/hellokoding/account/service/UserService.java:1:
+Expected key=value host variable assignment, got:
+com.hellokoding.account.service;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/service/UserService.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/service/UserServiceImpl.java with ini plugin: /home/jenkins
+/workspace/hello/src/main/java/com/hellokoding/account/service/UserServiceImpl.
+java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.service;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/service/UserServiceImpl.java as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/java/com/hellokoding/account/service as
+an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/validator/UserValidator.java with ini plugin: /home/jenkins
+/workspace/hello/src/main/java/com/hellokoding/account/validator/UserValidator.
+java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.validator;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/validator/UserValidator.java as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/java/com/hellokoding/account/validator
+as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/java/com/
+hellokoding/account/web/UserController.java with ini plugin: /home/jenkins/work
+space/hello/src/main/java/com/hellokoding/account/web/UserController.java:1:
+Expected key=value host variable assignment, got: com.hellokoding.account.web;
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com/hel
+lokoding/account/web/UserController.java as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/java/com/hellokoding/account/web as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/java/com/hellokoding/account as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/java/com/hellokoding as an inventory
+source
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java/com as
+an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/java as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/src/main/resources/db.sql with ini plugin:
+/home/jenkins/workspace/hello/src/main/resources/db.sql:1: Expected key=value
+host variable assignment, got: DATABASE
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/resources/db.sql as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/src/main/resources/logback.xml with ini plugin:
+/home/jenkins/workspace/hello/src/main/resources/logback.xml:2: Expected
+key=value host variable assignment, got: logback>
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/resources/logback.xml as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/src/main/resources/validation.properties with ini
+plugin:
+/home/jenkins/workspace/hello/src/main/resources/validation.properties:1:
+Expected key=value host variable assignment, got: field
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/resources/validation.properties as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/webapp
+/WEB-INF/appconfig-data.xml with ini plugin:
+/home/jenkins/workspace/hello/src/main/webapp/WEB-INF/appconfig-data.xml:6:
+Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans': No closing
+quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp/WEB-
+INF/appconfig-data.xml as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/webapp
+/WEB-INF/appconfig-mvc.xml with ini plugin:
+/home/jenkins/workspace/hello/src/main/webapp/WEB-INF/appconfig-mvc.xml:4:
+Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc.xsd
+http://www.springframework.org/schema/beans': No closing quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp/WEB-
+INF/appconfig-mvc.xml as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/webapp
+/WEB-INF/appconfig-root.xml with ini plugin:
+/home/jenkins/workspace/hello/src/main/webapp/WEB-INF/appconfig-root.xml:5:
+Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd': No closing
+quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp/WEB-
+INF/appconfig-root.xml as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/webapp
+/WEB-INF/appconfig-security.xml with ini plugin:
+/home/jenkins/workspace/hello/src/main/webapp/WEB-INF/appconfig-security.xml:5:
+Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans': No closing
+quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp/WEB-
+INF/appconfig-security.xml as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/webapp
+/WEB-INF/views/login.jsp with ini plugin:
+/home/jenkins/workspace/hello/src/main/webapp/WEB-INF/views/login.jsp:1:
+Expected key=value host variable assignment, got: taglib
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp/WEB-
+INF/views/login.jsp as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/webapp
+/WEB-INF/views/registration.jsp with ini plugin:
+/home/jenkins/workspace/hello/src/main/webapp/WEB-INF/views/registration.jsp:1:
+Expected key=value host variable assignment, got: taglib
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp/WEB-
+INF/views/registration.jsp as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/webapp
+/WEB-INF/views/welcome.jsp with ini plugin:
+/home/jenkins/workspace/hello/src/main/webapp/WEB-INF/views/welcome.jsp:1:
+Expected key=value host variable assignment, got: taglib
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp/WEB-
+INF/views/welcome.jsp as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp/WEB-
+INF/views as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/src/main/webapp
+/WEB-INF/web.xml with ini plugin: /home/jenkins/workspace/hello/src/main/webapp
+/WEB-INF/web.xml:3: Error parsing host definition
+'xsi:schemaLocation="http://java.sun.com/xml/ns/javaee': No closing quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp/WEB-
+INF/web.xml as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp/WEB-
+INF as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/src/main/webapp/resources/css/bootstrap.min.css
+with ini plugin: /home/jenkins/workspace/hello/src/main/webapp/resources/css/bo
+otstrap.min.css:2: Expected key=value host variable assignment, got: Bootstrap
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/webapp/resources/css/bootstrap.min.css
+as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/src/main/webapp/resources/css/common.css with ini
+plugin:
+/home/jenkins/workspace/hello/src/main/webapp/resources/css/common.css:1:
+Expected key=value host variable assignment, got: {
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/webapp/resources/css/common.css as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/webapp/resources/css as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/src/main/webapp/resources/js/bootstrap.min.js
+with ini plugin:
+/home/jenkins/workspace/hello/src/main/webapp/resources/js/bootstrap.min.js:2:
+Expected key=value host variable assignment, got: Bootstrap
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/webapp/resources/js/bootstrap.min.js as
+an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/webapp/resources/js as an inventory
+source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/src/main/webapp/resources as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/src/main/webapp as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/model/Role.class with ini plugin: 'utf8' codec can't
+decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/model/Role.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/model/User.class with ini plugin: 'utf8' codec can't
+decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/model/User.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/classes/com/hellokoding/account/model as
+an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/repository/RoleRepository.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/repository/RoleRepository.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/repository/UserRepository.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/repository/UserRepository.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/classes/com/hellokoding/account/repository
+as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/service/SecurityService.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/service/SecurityService.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/service/SecurityServiceImpl.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/service/SecurityServiceImpl.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/service/UserDetailsServiceImpl.class with ini plugin:
+'utf8' codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/service/UserDetailsServiceImpl.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/service/UserService.class with ini plugin: 'utf8' codec
+can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/service/UserService.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/service/UserServiceImpl.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/service/UserServiceImpl.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/classes/com/hellokoding/account/service as
+an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/validator/UserValidator.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/validator/UserValidator.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/classes/com/hellokoding/account/validator
+as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/classes/com
+/hellokoding/account/web/UserController.class with ini plugin: 'utf8' codec
+can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com/he
+llokoding/account/web/UserController.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/classes/com/hellokoding/account/web as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/classes/com/hellokoding/account as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/classes/com/hellokoding as an inventory
+source
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/com as
+an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/classes/db.sql with ini plugin:
+/home/jenkins/workspace/hello/target/classes/db.sql:1: Expected key=value host
+variable assignment, got: DATABASE
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/classes/db.sql
+as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/classes/logback.xml with ini plugin:
+/home/jenkins/workspace/hello/target/classes/logback.xml:2: Expected key=value
+host variable assignment, got: logback>
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/classes/logback.xml as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/classes/validation.properties with ini
+plugin: /home/jenkins/workspace/hello/target/classes/validation.properties:1:
+Expected key=value host variable assignment, got: field
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/classes/validation.properties as an
+inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/generated-
+sources/annotations as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/generated-
+sources as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/META-INF as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/appconfig-data.xml
+with ini plugin: /home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF
+/appconfig-data.xml:6: Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans': No closing
+quotation
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/appconfig-data.xml
+as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/appconfig-mvc.xml
+with ini plugin: /home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF
+/appconfig-mvc.xml:4: Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc.xsd
+http://www.springframework.org/schema/beans': No closing quotation
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/appconfig-mvc.xml
+as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/appconfig-root.xml
+with ini plugin: /home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF
+/appconfig-root.xml:5: Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd': No closing
+quotation
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/appconfig-root.xml
+as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/appconfig-
+security.xml with ini plugin:
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/appconfig-
+security.xml:5: Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans': No closing
+quotation
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/appconfig-
+security.xml as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/model/Role.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/model/Role.class as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/model/User.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/model/User.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/model as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/repository/RoleRepository.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/repository/RoleRepository.class as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/repository/UserRepository.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/repository/UserRepository.class as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/repository as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/SecurityService.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/SecurityService.class as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/SecurityServiceImpl.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/SecurityServiceImpl.class as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/UserDetailsServiceImpl.class with
+ini plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid
+continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/UserDetailsServiceImpl.class as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/UserService.class with ini plugin:
+'utf8' codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/UserService.class as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/UserServiceImpl.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/UserServiceImpl.class as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/validator/UserValidator.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/validator/UserValidator.class as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/validator as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/web/UserController.class with ini plugin:
+'utf8' codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/web/UserController.class as an inventory
+source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/web as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/classes/com as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/classes/db.sql
+with ini plugin: /home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/db.sql:1: Expected key=value host variable assignment, got:
+DATABASE
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/classes/db.sql as
+an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/logback.xml with ini plugin:
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/logback.xml:2: Expected key=value host variable assignment, got:
+logback>
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/logback.xml as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/validation.properties with ini plugin:
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/validation.properties:1: Expected key=value host variable
+assignment, got: field
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/classes/validation.properties as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/antlr-2.7.7.jar with ini plugin: 'utf8' codec can't decode byte 0xe3 in
+position 10: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/antlr-2.7.7.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/aopalliance-1.0.jar with ini plugin: 'utf8' codec can't decode byte
+0xf3 in position 84: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/aopalliance-1.0.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/aspectjrt-1.8.6.jar with ini plugin: 'utf8' codec can't decode byte
+0x85 in position 6: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/aspectjrt-1.8.6.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/classmate-1.1.0.jar with ini plugin: 'utf8' codec can't decode byte
+0xb0 in position 10: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/classmate-1.1.0.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/commons-
+dbcp-1.4.jar with ini plugin: 'utf8' codec can't decode byte 0x93 in position
+5: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/commons-
+dbcp-1.4.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/commons-
+logging-1.2.jar with ini plugin: 'utf8' codec can't decode byte 0xa1 in
+position 6: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/commons-
+logging-1.2.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/commons-
+pool-1.5.4.jar with ini plugin: 'utf8' codec can't decode byte 0xe1 in position
+9: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/commons-
+pool-1.5.4.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/dom4j-1.6.1.jar with ini plugin: 'utf8' codec can't decode byte 0xb0 in
+position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/dom4j-1.6.1.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+commons-annotations-4.0.5.Final.jar with ini plugin: 'utf8' codec can't decode
+byte 0xf5 in position 5: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+commons-annotations-4.0.5.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+core-4.3.11.Final.jar with ini plugin: 'utf8' codec can't decode byte 0xcf in
+position 9: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+core-4.3.11.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+entitymanager-4.3.11.Final.jar with ini plugin: 'utf8' codec can't decode byte
+0xa7 in position 6: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+entitymanager-4.3.11.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+jpa-2.1-api-1.0.0.Final.jar with ini plugin: 'utf8' codec can't decode byte
+0xfa in position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+jpa-2.1-api-1.0.0.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+validator-5.2.1.Final.jar with ini plugin: 'utf8' codec can't decode byte 0xfe
+in position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+validator-5.2.1.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/jandex-1.1.0.Final.jar with ini plugin: 'utf8' codec can't decode byte
+0xee in position 5: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/jandex-1.1.0.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/javassist-3.18.1-GA.jar with ini plugin: 'utf8' codec can't decode byte
+0xfe in position 50: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/lib/javassist-3.18.1-GA.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/jboss-
+logging-3.2.1.Final.jar with ini plugin: 'utf8' codec can't decode byte 0xc8 in
+position 5: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/jboss-
+logging-3.2.1.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/jboss-logging-
+annotations-1.2.0.Beta1.jar with ini plugin: 'utf8' codec can't decode byte
+0x95 in position 6: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/jboss-logging-
+annotations-1.2.0.Beta1.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/jboss-
+transaction-api_1.2_spec-1.0.0.Final.jar with ini plugin: 'utf8' codec can't
+decode byte 0x80 in position 5: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/jboss-
+transaction-api_1.2_spec-1.0.0.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/jcl-over-
+slf4j-1.7.12.jar with ini plugin: 'utf8' codec can't decode byte 0xaf in
+position 6: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/jcl-over-
+slf4j-1.7.12.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/jstl-1.2.jar
+with ini plugin: 'utf8' codec can't decode byte 0xb4 in position 5: invalid
+start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/jstl-1.2.jar
+as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/logback-
+classic-1.1.3.jar with ini plugin: 'utf8' codec can't decode byte 0xd9 in
+position 5: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/logback-
+classic-1.1.3.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/logback-
+core-1.1.3.jar with ini plugin: 'utf8' codec can't decode byte 0xaf in position
+5: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/logback-
+core-1.1.3.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/mysql-
+connector-java-5.1.36.jar with ini plugin: 'utf8' codec can't decode byte 0xab
+in position 6: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/mysql-
+connector-java-5.1.36.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/slf4j-
+api-1.7.12.jar with ini plugin: 'utf8' codec can't decode byte 0xf7 in position
+5: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/slf4j-
+api-1.7.12.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+aop-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xff in
+position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+aop-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+beans-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xff in
+position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+beans-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+context-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xff
+in position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+context-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+core-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xff in
+position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+core-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-data-
+commons-1.10.2.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xbd
+in position 5: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-data-
+commons-1.10.2.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-data-
+jpa-1.8.2.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xfc in
+position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-data-
+jpa-1.8.2.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+expression-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte
+0xff in position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+expression-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+jdbc-4.0.9.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0x9e in
+position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+jdbc-4.0.9.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+orm-4.0.9.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0x9e in
+position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+orm-4.0.9.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+security-config-4.0.2.RELEASE.jar with ini plugin: 'utf8' codec can't decode
+byte 0xf6 in position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+security-config-4.0.2.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+security-core-4.0.2.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte
+0xf6 in position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+security-core-4.0.2.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+security-web-4.0.2.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte
+0xf6 in position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+security-web-4.0.2.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+tx-4.0.9.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0x9e in
+position 1: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+tx-4.0.9.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+web-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xff in
+position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+web-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+webmvc-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0x8d
+in position 5: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/spring-
+webmvc-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/validation-
+api-1.1.0.Final.jar with ini plugin: 'utf8' codec can't decode byte 0x8a in
+position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/validation-
+api-1.1.0.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/xml-
+apis-1.0.b2.jar with ini plugin: 'utf8' codec can't decode byte 0x81 in
+position 7: invalid start byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib/xml-
+apis-1.0.b2.jar as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/lib as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/views/login.jsp
+with ini plugin: /home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/views/login.jsp:1: Expected key=value host variable assignment, got: taglib
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/views/login.jsp as
+an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/views/registration.jsp with ini plugin:
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/views/registration.jsp:1: Expected key=value host variable assignment, got:
+taglib
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/views/registration.jsp as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/views/welcome.jsp
+with ini plugin: /home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-
+INF/views/welcome.jsp:1: Expected key=value host variable assignment, got:
+taglib
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/views/welcome.jsp
+as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/views as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/web.xml with ini
+plugin: /home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/web.xml:3:
+Error parsing host definition
+'xsi:schemaLocation="http://java.sun.com/xml/ns/javaee': No closing quotation
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/WEB-INF/web.xml as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/janakiLogin
+-2.0/resources/css/bootstrap.min.css with ini plugin: /home/jenkins/workspace/h
+ello/target/janakiLogin-2.0/resources/css/bootstrap.min.css:2: Expected
+key=value host variable assignment, got: Bootstrap
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/janakiLogin-2.
+0/resources/css/bootstrap.min.css as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/resources/css/common.css
+with ini plugin: /home/jenkins/workspace/hello/target/janakiLogin-2.0/resources
+/css/common.css:1: Expected key=value host variable assignment, got: {
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/resources/css/common.css
+as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/resources/css as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/hello/target/janakiLogin
+-2.0/resources/js/bootstrap.min.js with ini plugin: /home/jenkins/workspace/hel
+lo/target/janakiLogin-2.0/resources/js/bootstrap.min.js:2: Expected key=value
+host variable assignment, got: Bootstrap
+ [WARNING]: Unable to parse /home/jenkins/workspace/hello/target/janakiLogin-2.
+0/resources/js/bootstrap.min.js as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/resources/js as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0/resources as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0.war with ini plugin:
+'utf8' codec can't decode byte 0xd6 in position 1: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/hello/target/janakiLogin-2.0.war as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/pom.xml with ini
+plugin: /home/jenkins/workspace/job1/pom.xml:8: Expected key=value host
+variable assignment, got: Registration
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/pom.xml as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/model/Role.java with ini plugin: /home/jenkins/workspace/job
+1/src/main/java/com/hellokoding/account/model/Role.java:1: Expected key=value
+host variable assignment, got: com.hellokoding.account.model;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/model/Role.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/model/User.java with ini plugin: /home/jenkins/workspace/job
+1/src/main/java/com/hellokoding/account/model/User.java:1: Expected key=value
+host variable assignment, got: com.hellokoding.account.model;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/model/User.java as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/java/com/hellokoding/account/model as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/repository/RoleRepository.java with ini plugin: /home/jenkin
+s/workspace/job1/src/main/java/com/hellokoding/account/repository/RoleRepositor
+y.java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.repository;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/repository/RoleRepository.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/repository/UserRepository.java with ini plugin: /home/jenkin
+s/workspace/job1/src/main/java/com/hellokoding/account/repository/UserRepositor
+y.java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.repository;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/repository/UserRepository.java as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/java/com/hellokoding/account/repository
+as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/service/SecurityService.java with ini plugin: /home/jenkins/
+workspace/job1/src/main/java/com/hellokoding/account/service/SecurityService.ja
+va:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.service;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/service/SecurityService.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/service/SecurityServiceImpl.java with ini plugin: /home/jenk
+ins/workspace/job1/src/main/java/com/hellokoding/account/service/SecurityServic
+eImpl.java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.service;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/service/SecurityServiceImpl.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/service/UserDetailsServiceImpl.java with ini plugin: /home/j
+enkins/workspace/job1/src/main/java/com/hellokoding/account/service/UserDetails
+ServiceImpl.java:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.service;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/service/UserDetailsServiceImpl.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/service/UserService.java with ini plugin: /home/jenkins/work
+space/job1/src/main/java/com/hellokoding/account/service/UserService.java:1:
+Expected key=value host variable assignment, got:
+com.hellokoding.account.service;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/service/UserService.java as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/service/UserServiceImpl.java with ini plugin: /home/jenkins/
+workspace/job1/src/main/java/com/hellokoding/account/service/UserServiceImpl.ja
+va:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.service;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/service/UserServiceImpl.java as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/java/com/hellokoding/account/service as
+an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/validator/UserValidator.java with ini plugin: /home/jenkins/
+workspace/job1/src/main/java/com/hellokoding/account/validator/UserValidator.ja
+va:1: Expected key=value host variable assignment, got:
+com.hellokoding.account.validator;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/validator/UserValidator.java as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/java/com/hellokoding/account/validator as
+an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/java/com/h
+ellokoding/account/web/UserController.java with ini plugin: /home/jenkins/works
+pace/job1/src/main/java/com/hellokoding/account/web/UserController.java:1:
+Expected key=value host variable assignment, got: com.hellokoding.account.web;
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com/hell
+okoding/account/web/UserController.java as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/java/com/hellokoding/account/web as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/java/com/hellokoding/account as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/java/com/hellokoding as an inventory
+source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java/com as
+an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/java as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/src/main/resources/db.sql with ini plugin:
+/home/jenkins/workspace/job1/src/main/resources/db.sql:1: Expected key=value
+host variable assignment, got: DATABASE
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/resources/db.sql as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/src/main/resources/logback.xml with ini plugin:
+/home/jenkins/workspace/job1/src/main/resources/logback.xml:2: Expected
+key=value host variable assignment, got: logback>
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/resources/logback.xml as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/src/main/resources/validation.properties with ini
+plugin:
+/home/jenkins/workspace/job1/src/main/resources/validation.properties:1:
+Expected key=value host variable assignment, got: field
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/resources/validation.properties as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/webapp
+/WEB-INF/appconfig-data.xml with ini plugin:
+/home/jenkins/workspace/job1/src/main/webapp/WEB-INF/appconfig-data.xml:6:
+Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans': No closing
+quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp/WEB-
+INF/appconfig-data.xml as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/webapp
+/WEB-INF/appconfig-mvc.xml with ini plugin:
+/home/jenkins/workspace/job1/src/main/webapp/WEB-INF/appconfig-mvc.xml:4: Error
+parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc.xsd
+http://www.springframework.org/schema/beans': No closing quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp/WEB-
+INF/appconfig-mvc.xml as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/webapp
+/WEB-INF/appconfig-root.xml with ini plugin:
+/home/jenkins/workspace/job1/src/main/webapp/WEB-INF/appconfig-root.xml:5:
+Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd': No closing
+quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp/WEB-
+INF/appconfig-root.xml as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/webapp
+/WEB-INF/appconfig-security.xml with ini plugin:
+/home/jenkins/workspace/job1/src/main/webapp/WEB-INF/appconfig-security.xml:5:
+Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans': No closing
+quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp/WEB-
+INF/appconfig-security.xml as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/webapp
+/WEB-INF/views/login.jsp with ini plugin:
+/home/jenkins/workspace/job1/src/main/webapp/WEB-INF/views/login.jsp:1:
+Expected key=value host variable assignment, got: taglib
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp/WEB-
+INF/views/login.jsp as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/webapp
+/WEB-INF/views/registration.jsp with ini plugin:
+/home/jenkins/workspace/job1/src/main/webapp/WEB-INF/views/registration.jsp:1:
+Expected key=value host variable assignment, got: taglib
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp/WEB-
+INF/views/registration.jsp as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/webapp
+/WEB-INF/views/welcome.jsp with ini plugin:
+/home/jenkins/workspace/job1/src/main/webapp/WEB-INF/views/welcome.jsp:1:
+Expected key=value host variable assignment, got: taglib
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp/WEB-
+INF/views/welcome.jsp as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp/WEB-
+INF/views as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/src/main/webapp
+/WEB-INF/web.xml with ini plugin: /home/jenkins/workspace/job1/src/main/webapp
+/WEB-INF/web.xml:3: Error parsing host definition
+'xsi:schemaLocation="http://java.sun.com/xml/ns/javaee': No closing quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp/WEB-
+INF/web.xml as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp/WEB-
+INF as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/src/main/webapp/resources/css/bootstrap.min.css
+with ini plugin:
+/home/jenkins/workspace/job1/src/main/webapp/resources/css/bootstrap.min.css:2:
+Expected key=value host variable assignment, got: Bootstrap
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/webapp/resources/css/bootstrap.min.css as
+an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/src/main/webapp/resources/css/common.css with ini
+plugin:
+/home/jenkins/workspace/job1/src/main/webapp/resources/css/common.css:1:
+Expected key=value host variable assignment, got: {
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/webapp/resources/css/common.css as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/webapp/resources/css as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/src/main/webapp/resources/js/bootstrap.min.js with
+ini plugin:
+/home/jenkins/workspace/job1/src/main/webapp/resources/js/bootstrap.min.js:2:
+Expected key=value host variable assignment, got: Bootstrap
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/webapp/resources/js/bootstrap.min.js as
+an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/webapp/resources/js as an inventory
+source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/src/main/webapp/resources as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/src/main/webapp as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/model/Role.class with ini plugin: 'utf8' codec can't decode
+byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/model/Role.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/model/User.class with ini plugin: 'utf8' codec can't decode
+byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/model/User.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/classes/com/hellokoding/account/model as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/repository/RoleRepository.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/repository/RoleRepository.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/repository/UserRepository.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/repository/UserRepository.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/classes/com/hellokoding/account/repository
+as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/service/SecurityService.class with ini plugin: 'utf8' codec
+can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/service/SecurityService.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/service/SecurityServiceImpl.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/service/SecurityServiceImpl.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/service/UserDetailsServiceImpl.class with ini plugin:
+'utf8' codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/service/UserDetailsServiceImpl.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/service/UserService.class with ini plugin: 'utf8' codec
+can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/service/UserService.class as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/service/UserServiceImpl.class with ini plugin: 'utf8' codec
+can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/service/UserServiceImpl.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/classes/com/hellokoding/account/service as
+an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/validator/UserValidator.class with ini plugin: 'utf8' codec
+can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/validator/UserValidator.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/classes/com/hellokoding/account/validator
+as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/classes/com/
+hellokoding/account/web/UserController.class with ini plugin: 'utf8' codec
+can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com/hel
+lokoding/account/web/UserController.class as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/classes/com/hellokoding/account/web as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/classes/com/hellokoding/account as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/classes/com/hellokoding as an inventory
+source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/com as
+an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/classes/db.sql with ini plugin:
+/home/jenkins/workspace/job1/target/classes/db.sql:1: Expected key=value host
+variable assignment, got: DATABASE
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/classes/db.sql
+as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/classes/logback.xml with ini plugin:
+/home/jenkins/workspace/job1/target/classes/logback.xml:2: Expected key=value
+host variable assignment, got: logback>
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/classes/logback.xml as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/classes/validation.properties with ini
+plugin: /home/jenkins/workspace/job1/target/classes/validation.properties:1:
+Expected key=value host variable assignment, got: field
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/classes/validation.properties as an
+inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/generated-
+sources/annotations as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/generated-
+sources as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/META-INF as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/appconfig-data.xml
+with ini plugin: /home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF
+/appconfig-data.xml:6: Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans': No closing
+quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/appconfig-data.xml as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/appconfig-mvc.xml
+with ini plugin: /home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF
+/appconfig-mvc.xml:4: Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc.xsd
+http://www.springframework.org/schema/beans': No closing quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/appconfig-mvc.xml as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/appconfig-root.xml
+with ini plugin: /home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF
+/appconfig-root.xml:5: Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd': No closing
+quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/appconfig-root.xml as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/appconfig-
+security.xml with ini plugin:
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/appconfig-
+security.xml:5: Error parsing host definition
+'xsi:schemaLocation="http://www.springframework.org/schema/beans': No closing
+quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/appconfig-security.xml as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/model/Role.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/model/Role.class as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/model/User.class with ini plugin: 'utf8'
+codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/model/User.class as an inventory
+source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/model as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/repository/RoleRepository.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/repository/RoleRepository.class as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/repository/UserRepository.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/repository/UserRepository.class as an
+inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/repository as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/SecurityService.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/service/SecurityService.class as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/SecurityServiceImpl.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/service/SecurityServiceImpl.class as
+an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/UserDetailsServiceImpl.class with
+ini plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid
+continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/service/UserDetailsServiceImpl.class
+as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/UserService.class with ini plugin:
+'utf8' codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/service/UserService.class as an
+inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/service/UserServiceImpl.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/service/UserServiceImpl.class as an
+inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/service as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/validator/UserValidator.class with ini
+plugin: 'utf8' codec can't decode byte 0xca in position 0: invalid continuation
+byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/validator/UserValidator.class as an
+inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/validator as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/com/hellokoding/account/web/UserController.class with ini plugin:
+'utf8' codec can't decode byte 0xca in position 0: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/web/UserController.class as an
+inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account/web as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding/account as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com/hellokoding as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/com as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/classes/db.sql with
+ini plugin: /home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/db.sql:1: Expected key=value host variable assignment, got:
+DATABASE
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/db.sql as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/classes/logback.xml
+with ini plugin: /home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/logback.xml:2: Expected key=value host variable assignment, got:
+logback>
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/logback.xml as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/validation.properties with ini plugin:
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/classes/validation.properties:1: Expected key=value host variable
+assignment, got: field
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/classes/validation.properties as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/antlr-2.7.7.jar
+with ini plugin: 'utf8' codec can't decode byte 0xe3 in position 10: invalid
+continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/antlr-2.7.7.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/lib/aopalliance-1.0.jar with ini plugin: 'utf8' codec can't decode byte
+0xf3 in position 84: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/aopalliance-1.0.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/lib/aspectjrt-1.8.6.jar with ini plugin: 'utf8' codec can't decode byte
+0x85 in position 6: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/aspectjrt-1.8.6.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/lib/classmate-1.1.0.jar with ini plugin: 'utf8' codec can't decode byte
+0xb0 in position 10: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/classmate-1.1.0.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/commons-
+dbcp-1.4.jar with ini plugin: 'utf8' codec can't decode byte 0x93 in position
+5: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/commons-dbcp-1.4.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/commons-
+logging-1.2.jar with ini plugin: 'utf8' codec can't decode byte 0xa1 in
+position 6: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/commons-logging-1.2.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/commons-
+pool-1.5.4.jar with ini plugin: 'utf8' codec can't decode byte 0xe1 in position
+9: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/commons-pool-1.5.4.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/dom4j-1.6.1.jar
+with ini plugin: 'utf8' codec can't decode byte 0xb0 in position 7: invalid
+start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/dom4j-1.6.1.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+commons-annotations-4.0.5.Final.jar with ini plugin: 'utf8' codec can't decode
+byte 0xf5 in position 5: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+core-4.3.11.Final.jar with ini plugin: 'utf8' codec can't decode byte 0xcf in
+position 9: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/hibernate-core-4.3.11.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+entitymanager-4.3.11.Final.jar with ini plugin: 'utf8' codec can't decode byte
+0xa7 in position 6: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/hibernate-entitymanager-4.3.11.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+jpa-2.1-api-1.0.0.Final.jar with ini plugin: 'utf8' codec can't decode byte
+0xfa in position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/hibernate-
+validator-5.2.1.Final.jar with ini plugin: 'utf8' codec can't decode byte 0xfe
+in position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/hibernate-validator-5.2.1.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/lib/jandex-1.1.0.Final.jar with ini plugin: 'utf8' codec can't decode byte
+0xee in position 5: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/jandex-1.1.0.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/lib/javassist-3.18.1-GA.jar with ini plugin: 'utf8' codec can't decode byte
+0xfe in position 50: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/javassist-3.18.1-GA.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/jboss-
+logging-3.2.1.Final.jar with ini plugin: 'utf8' codec can't decode byte 0xc8 in
+position 5: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/jboss-logging-3.2.1.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/jboss-logging-
+annotations-1.2.0.Beta1.jar with ini plugin: 'utf8' codec can't decode byte
+0x95 in position 6: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/jboss-
+transaction-api_1.2_spec-1.0.0.Final.jar with ini plugin: 'utf8' codec can't
+decode byte 0x80 in position 5: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/jcl-over-
+slf4j-1.7.12.jar with ini plugin: 'utf8' codec can't decode byte 0xaf in
+position 6: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/jcl-over-slf4j-1.7.12.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/jstl-1.2.jar
+with ini plugin: 'utf8' codec can't decode byte 0xb4 in position 5: invalid
+start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/jstl-1.2.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/logback-
+classic-1.1.3.jar with ini plugin: 'utf8' codec can't decode byte 0xd9 in
+position 5: invalid continuation byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/logback-classic-1.1.3.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/logback-
+core-1.1.3.jar with ini plugin: 'utf8' codec can't decode byte 0xaf in position
+5: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/logback-core-1.1.3.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/mysql-
+connector-java-5.1.36.jar with ini plugin: 'utf8' codec can't decode byte 0xab
+in position 6: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/mysql-connector-java-5.1.36.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/slf4j-
+api-1.7.12.jar with ini plugin: 'utf8' codec can't decode byte 0xf7 in position
+5: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/slf4j-api-1.7.12.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+aop-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xff in
+position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-aop-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+beans-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xff in
+position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-beans-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+context-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xff
+in position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-context-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+core-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xff in
+position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-core-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-data-
+commons-1.10.2.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xbd
+in position 5: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-data-commons-1.10.2.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-data-
+jpa-1.8.2.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xfc in
+position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-data-jpa-1.8.2.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+expression-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte
+0xff in position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-expression-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+jdbc-4.0.9.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0x9e in
+position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-jdbc-4.0.9.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+orm-4.0.9.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0x9e in
+position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-orm-4.0.9.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+security-config-4.0.2.RELEASE.jar with ini plugin: 'utf8' codec can't decode
+byte 0xf6 in position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-security-config-4.0.2.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+security-core-4.0.2.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte
+0xf6 in position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-security-core-4.0.2.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+security-web-4.0.2.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte
+0xf6 in position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-security-web-4.0.2.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+tx-4.0.9.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0x9e in
+position 1: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-tx-4.0.9.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+web-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0xff in
+position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-web-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/spring-
+webmvc-4.2.0.RELEASE.jar with ini plugin: 'utf8' codec can't decode byte 0x8d
+in position 5: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/spring-webmvc-4.2.0.RELEASE.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/validation-
+api-1.1.0.Final.jar with ini plugin: 'utf8' codec can't decode byte 0x8a in
+position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/validation-api-1.1.0.Final.jar as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/lib/xml-
+apis-1.0.b2.jar with ini plugin: 'utf8' codec can't decode byte 0x81 in
+position 7: invalid start byte
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib/xml-apis-1.0.b2.jar as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/lib as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/views/login.jsp
+with ini plugin: /home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/views/login.jsp:1: Expected key=value host variable assignment, got: taglib
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/views/login.jsp as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/views/registration.jsp with ini plugin:
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/views/registration.jsp:1: Expected key=value host variable assignment, got:
+taglib
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/views/registration.jsp as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/views/welcome.jsp
+with ini plugin: /home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-
+INF/views/welcome.jsp:1: Expected key=value host variable assignment, got:
+taglib
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/views/welcome.jsp as an inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/views as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/web.xml with ini
+plugin: /home/jenkins/workspace/job1/target/janakiLogin-2.0/WEB-INF/web.xml:3:
+Error parsing host definition
+'xsi:schemaLocation="http://java.sun.com/xml/ns/javaee': No closing quotation
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/WEB-INF/web.xml as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/janakiLogin-
+2.0/resources/css/bootstrap.min.css with ini plugin: /home/jenkins/workspace/jo
+b1/target/janakiLogin-2.0/resources/css/bootstrap.min.css:2: Expected key=value
+host variable assignment, got: Bootstrap
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/resources/css/bootstrap.min.css as an inventory source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/resources/css/common.css
+with ini plugin:
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/resources/css/common.css:1:
+Expected key=value host variable assignment, got: {
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/resources/css/common.css as
+an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/resources/css as an
+inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/job1/target/janakiLogin-
+2.0/resources/js/bootstrap.min.js with ini plugin: /home/jenkins/workspace/job1
+/target/janakiLogin-2.0/resources/js/bootstrap.min.js:2: Expected key=value
+host variable assignment, got: Bootstrap
+ [WARNING]: Unable to parse /home/jenkins/workspace/job1/target/janakiLogin-2.0
+/resources/js/bootstrap.min.js as an inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/resources/js as an
+inventory source
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0/resources as an inventory
+source
+ [WARNING]:  * Failed to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0.war with ini plugin: 'utf8'
+codec can't decode byte 0xe1 in position 7: invalid continuation byte
+ [WARNING]: Unable to parse
+/home/jenkins/workspace/job1/target/janakiLogin-2.0.war as an inventory source
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/myjob/Dockerfile with
+yaml plugin: YAML inventory has invalid structure, it should be a dictionary,
+got: <class 'ansible.parsing.yaml.objects.AnsibleUnicode'>
+ [WARNING]:  * Failed to parse /home/jenkins/workspace/myjob/Dockerfile with
+ini plugin: /home/jenkins/workspace/myjob/Dockerfile:1: Expected key=value host
+variable assignment, got: tomcat:8.5.42-jdk8-openjdk
+ [WARNING]: Unable to parse /home/jenkins/workspace/myjob/Dockerfile as an
+inventory source
+ [WARNING]: Unable to parse /home/jenkins/workspace/myjob as an inventory
+source
+ [WARNING]: Unable to parse /home/jenkins/workspace/myjob1 as an inventory
+source
+ERROR! 'ec2' is not a valid attribute for a Play
+
+The error appears to be in '/home/jenkins/ec2.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- ec2:
+  ^ here
+FATAL: command execution failed
+hudson.AbortException: Ansible playbook execution failed
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:262)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:232)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:79)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:741)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1818)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+ERROR: Ansible playbook execution failed
+Finished: FAILURE

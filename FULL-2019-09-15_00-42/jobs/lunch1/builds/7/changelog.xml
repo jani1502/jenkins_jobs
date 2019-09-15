@@ -1,0 +1,12 @@
+commit ec3ecc255b7260607f683e5f1bb5c5515ebe563b
+tree 7840fd83463dff7cf47667dbfad08e851f6df774
+parent 040955b921761641ea8245ce644ede071d7dc061
+author janakiram.charuku@gmail.com <janakiram.charuku@gmail.com> 2019-08-27 14:53:50 +0530
+committer janakiram.charuku@gmail.com <janakiram.charuku@gmail.com> 2019-08-27 14:53:50 +0530
+
+    new
+
+
+
+:100644 100644 f048b1c6e5040dadc5505688105452beced65bdd 48de23397a28cb1d8ff33fb8149ddb35e26bf951 M	asg.yml
+:100644 100644 ca37c8b8911995244155be07946c17e51f8c3ed8 88ab4b43dc46b0cb8cc1feed9608f14a4575c9e5 M	launchconfig.yml

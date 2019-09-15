@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.32">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.70">
+    <script>node{
+ stage(&apos;gitclone&apos;) {
+    git &apos;https://github.com/jani1502/src.git&apos;
+}
+
+stage(&apos;gitclone&apos;) {
+    sh label: &apos;&apos;, script: &apos;mvn install&apos;
+}
+ 
+  stage(&apos;email&apos;) {
+    mail bcc: &apos;&apos;, body: &apos;hi janaki mvn goal rehihsihia&apos;, cc: &apos;janakiram.charuku@gmail.com&apos;, from: &apos;&apos;, replyTo: &apos;&apos;, subject: &apos;mvn goals report&apos;, to: &apos;janicharuku@gmail.com&apos;
+} 
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

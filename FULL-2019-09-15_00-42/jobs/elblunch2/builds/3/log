@@ -1,0 +1,38 @@
+Started by upstream project "[8mha:////4FAUwyzYS+FGP8wNkX1CTcqcuu0peu3PskRSdw8tmRuQAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/az8JP2c0rzkDEN9AIzTtoHBAAAA[0mlunch1" build number [8mha:////4K+9El8355hM2kD+wWK9YbhK21+uFovYDh/GiuYRt9VXAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBl79rPwk/ZzSvOQMQ30TAN3/pKrCAAAA[0m4
+originally caused by:
+ Started by GitHub push by jani1502
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/elblunch2
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jani1502/autoscaliing-withansible.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/autoscaliing-withansible.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/autoscaliing-withansible.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f5bc34a79dee93692e521a46a6d22f878c0618ef (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f5bc34a79dee93692e521a46a6d22f878c0618ef
+Commit message: "script"
+ > git rev-list --no-walk 4a1b8aafff059b60d938749fbd4bd10c685f1f2a # timeout=10
+[elblunch2] $ /bin/sh -xe /tmp/jenkins3959068051664355451.sh
++ cd /home/jenkins/workspace/elblunch2/
++ ansible-playbook elb.yml
+ [WARNING]: provided hosts list is empty, only localhost is available. Note
+that the implicit localhost does not match 'all'
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [i want create elb for istances] ******************************************
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Triggering a new build of [8mha:////4MlwhNRsoMmy4alVKXcaQpX56oR4+NNvRVhBkrFspuM4AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JP3E4vSc0rzkDGN9AP1selfEAAAA[0masglunch3
+Finished: SUCCESS

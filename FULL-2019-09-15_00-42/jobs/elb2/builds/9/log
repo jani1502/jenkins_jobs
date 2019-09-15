@@ -1,0 +1,37 @@
+Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/elb2
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jani1502/autoscaliing-withansible.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/autoscaliing-withansible.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/autoscaliing-withansible.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a84a4dbf65c685b9486b577e9a8f8e2dc481a947 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a84a4dbf65c685b9486b577e9a8f8e2dc481a947
+Commit message: "shd"
+ > git rev-list --no-walk 82bb567f7ae0b7ff59e8b61758f10c44ad34281c # timeout=10
+[elb2] $ /bin/sh -xe /tmp/jenkins1952903248443663260.sh
++ cd /home/jenkins/workspace/elb2/
++ ansible-playbook elb.yml
+ [WARNING]: provided hosts list is empty, only localhost is available. Note
+that the implicit localhost does not match 'all'
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [i want create elb for istances] ******************************************
+An exception occurred during task execution. To see the full traceback, use -vvv. The error was: </ErrorResponse>
+fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "Traceback (most recent call last):\n  File \"/home/jenkins/.ansible/tmp/ansible-tmp-1566652536.65-51036276843382/AnsiballZ_ec2_elb_lb.py\", line 114, in <module>\n    _ansiballz_main()\n  File \"/home/jenkins/.ansible/tmp/ansible-tmp-1566652536.65-51036276843382/AnsiballZ_ec2_elb_lb.py\", line 106, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \"/home/jenkins/.ansible/tmp/ansible-tmp-1566652536.65-51036276843382/AnsiballZ_ec2_elb_lb.py\", line 49, in invoke_module\n    imp.load_module('__main__', mod, module, MOD_DESC)\n  File \"/tmp/ansible_ec2_elb_lb_payload_D_wtLs/__main__.py\", line 1365, in <module>\n  File \"/tmp/ansible_ec2_elb_lb_payload_D_wtLs/__main__.py\", line 1352, in main\n  File \"/tmp/ansible_ec2_elb_lb_payload_D_wtLs/__main__.py\", line 405, in _do_op\n  File \"/tmp/ansible_ec2_elb_lb_payload_D_wtLs/__main__.py\", line 482, in ensure_ok\n  File \"/tmp/ansible_ec2_elb_lb_payload_D_wtLs/__main__.py\", line 714, in _create_elb\n  File \"/usr/local/lib/python2.7/dist-packages/boto/ec2/elb/__init__.py\", line 242, in create_load_balancer\n    params, LoadBalancer)\n  File \"/usr/local/lib/python2.7/dist-packages/boto/connection.py\", line 1208, in get_object\n    raise self.ResponseError(response.status, response.reason, body)\nboto.exception.BotoServerError: BotoServerError: 400 Bad Request\n<ErrorResponse xmlns=\"http://elasticloadbalancing.amazonaws.com/doc/2012-06-01/\">\n  <Error>\n    <Type>Sender</Type>\n    <Code>ValidationError</Code>\n    <Message>Invalid Availability Zone: us-east-1a</Message>\n  </Error>\n  <RequestId>43225c7b-c671-11e9-b956-c1770f6c79b5</RequestId>\n</ErrorResponse>\n\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

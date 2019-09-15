@@ -1,0 +1,40 @@
+Started by upstream project "[8mha:////4NirxnMugkXRr27a5+EQhonDCm3HHV4NXa8vObWqKk2qAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JP3UnKSc0rzkDCN9AAJ+E3zEAAAA[0melblunch2" build number [8mha:////4EzOkaZnMygxLhuTdaBTTmLEbeBj1kSCmGYMQe37/PweAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgH9rPwk/dScpJzSvOQMI31TAOYlyybFAAAA[0m5
+originally caused by:
+ Started by upstream project "[8mha:////4FAUwyzYS+FGP8wNkX1CTcqcuu0peu3PskRSdw8tmRuQAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/az8JP2c0rzkDEN9AIzTtoHBAAAA[0mlunch1" build number [8mha:////4GOWkW4caME2/s6ROp1skSW+Dy1qIhf5t6/XC1go1v1LAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBl79rPwk/ZzSvOQMQ30zAPGeqkTCAAAA[0m6
+ originally caused by:
+  Started by GitHub push by jani1502
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/asglunch3
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jani1502/autoscaliing-withansible.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/autoscaliing-withansible.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/autoscaliing-withansible.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 040955b921761641ea8245ce644ede071d7dc061 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 040955b921761641ea8245ce644ede071d7dc061
+Commit message: "dk"
+ > git rev-list --no-walk e2392b4bd763c01390b9f499dc8d75702cc03121 # timeout=10
+[asglunch3] $ /bin/sh -xe /tmp/jenkins8611288647360595902.sh
++ cd /home/jenkins/workspace/asglunch3/
++ ansible-playbook asg.yml
+ [WARNING]: provided hosts list is empty, only localhost is available. Note
+that the implicit localhost does not match 'all'
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [i want to create autoscalling group] *************************************
+fatal: [localhost]: FAILED! => {"changed": false, "msg": "Waited too long for ELB instances to be healthy. Tue Aug 27 09:21:43 2019"}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

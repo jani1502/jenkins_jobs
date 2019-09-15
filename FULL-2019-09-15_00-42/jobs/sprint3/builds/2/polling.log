@@ -1,0 +1,11 @@
+Started on Sep 5, 2019 10:08:15 AM
+Started by event from 140.82.115.65 ⇒ http://54.213.189.159:8080/github-webhook/ on Thu Sep 05 10:08:14 UTC 2019
+Using strategy: Default
+[poll] Last Built Revision: Revision b9efc25bee8e78c27f2784f548af52397a22c5b1 (refs/remotes/origin/SPRINT3)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/jani1502/src_withbranches.git # timeout=10
+Found 6 remote heads on https://github.com/jani1502/src_withbranches.git
+[poll] Latest remote head revision on refs/heads/SPRINT3 is: bfcde131b4c35a3c95b39f99fade511e0932f81d
+Done. Took 0.36 sec
+Changes found

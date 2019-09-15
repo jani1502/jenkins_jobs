@@ -1,0 +1,73 @@
+Started by GitHub push by jani1502
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/sprint1
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/jani1502/src_withbranches.git
+ > git init /var/lib/jenkins/workspace/sprint1 # timeout=10
+Fetching upstream changes from https://github.com/jani1502/src_withbranches.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/src_withbranches.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jani1502/src_withbranches.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jani1502/src_withbranches.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/src_withbranches.git
+ > git fetch --tags --progress https://github.com/jani1502/src_withbranches.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/SPRINT1^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/SPRINT1^{commit} # timeout=10
+Checking out Revision 95602abd1a22c42b80d00cb3eb1f2581b07702ec (refs/remotes/origin/SPRINT1)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 95602abd1a22c42b80d00cb3eb1f2581b07702ec
+Commit message: "djd"
+ > git rev-list --no-walk 4cdb283043a2845efe263433b1d47b93a0e55437 # timeout=10
+[sprint1] $ mvn clean install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Account Registration Webapp 4.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ janakiLogin ---
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ janakiLogin ---
+[8mha:////4LitOFfMMjjhexQsDBEetLYoIfQ0+exB0BNfblLCrhquAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 4 resources
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ janakiLogin ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4LitOFfMMjjhexQsDBEetLYoIfQ0+exB0BNfblLCrhquAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 11 source files to /var/lib/jenkins/workspace/sprint1/target/classes
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ janakiLogin ---
+[8mha:////4LitOFfMMjjhexQsDBEetLYoIfQ0+exB0BNfblLCrhquAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/sprint1/src/test/resources
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ janakiLogin ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ janakiLogin ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ janakiLogin ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [janakiLogin] in [/var/lib/jenkins/workspace/sprint1/target/janakiLogin-4.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/sprint1/src/main/webapp]
+[INFO] Webapp assembled in [210 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/sprint1/target/janakiLogin-4.0.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[8mha:////4FWPAztR93XC7xXmibVOgLpPuqCQYXJgbqUP+rymsO2VAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ janakiLogin ---
+[INFO] Installing /var/lib/jenkins/workspace/sprint1/target/janakiLogin-4.0.war to /var/lib/jenkins/.m2/repository/com/jani/janakiLogin/4.0/janakiLogin-4.0.war
+[INFO] Installing /var/lib/jenkins/workspace/sprint1/pom.xml to /var/lib/jenkins/.m2/repository/com/jani/janakiLogin/4.0/janakiLogin-4.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.133 s
+[INFO] Finished at: 2019-09-05T10:15:14+00:00
+[INFO] Final Memory: 18M/44M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

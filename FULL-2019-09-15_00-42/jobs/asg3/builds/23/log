@@ -1,0 +1,37 @@
+Started by user [8mha:////4MHfU9xnJk0TgBN1NRm7l/3mu30lymz2z/ypgvOlQqffAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mjani
+Running as SYSTEM
+Building remotely on [8mha:////4L8zriXMW/yHHh1KChGlzyLZbpSGe6BrTMgiX08DlqPDAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/dzKPKBLASShNV3FAAAA[0mmynode (mylabel) in workspace /home/jenkins/workspace/asg3
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jani1502/autoscaliing-withansible.git # timeout=10
+Fetching upstream changes from https://github.com/jani1502/autoscaliing-withansible.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jani1502/autoscaliing-withansible.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 81bf5a7da9d9a121522f887b464693e8e799c8b9 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 81bf5a7da9d9a121522f887b464693e8e799c8b9
+Commit message: "dhdk"
+ > git rev-list --no-walk 9f95140c00d147c10fc1e6a20bf672596d851222 # timeout=10
+[asg3] $ /bin/sh -xe /tmp/jenkins7193482991921924775.sh
++ cd /home/jenkins/workspace/asg3/
++ ansible-playbook asg.yml
+ [WARNING]: provided hosts list is empty, only localhost is available. Note
+that the implicit localhost does not match 'all'
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [i want to create autoscalling group] *************************************
+An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ClientError: An error occurred (ValidationError) when calling the CreateAutoScalingGroup operation: The availability zones of the specified subnets and the Auto Scaling group do not match
+fatal: [localhost]: FAILED! => {"changed": false, "error": {"code": "ValidationError", "message": "The availability zones of the specified subnets and the Auto Scaling group do not match", "type": "Sender"}, "msg": "Failed to create Autoscaling Group.", "response_metadata": {"http_headers": {"connection": "close", "content-_length": "341", "content-_type": "text/xml", "date": "Sat, 24 Aug 2019 14:18:57 GMT", "x-amzn-_request_id": "1c1bbbcb-c67a-11e9-810d-a512f0c91591"}, "http_status_code": 400, "request_id": "1c1bbbcb-c67a-11e9-810d-a512f0c91591", "retry_attempts": 0}}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

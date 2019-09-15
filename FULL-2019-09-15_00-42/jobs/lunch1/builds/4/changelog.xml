@@ -1,0 +1,11 @@
+commit f5bc34a79dee93692e521a46a6d22f878c0618ef
+tree 36411c69761e6ed7714d40523185b7f293e6efcb
+parent 4a1b8aafff059b60d938749fbd4bd10c685f1f2a
+author janakiram.charuku@gmail.com <janakiram.charuku@gmail.com> 2019-08-27 14:30:26 +0530
+committer janakiram.charuku@gmail.com <janakiram.charuku@gmail.com> 2019-08-27 14:30:26 +0530
+
+    script
+
+
+
+:100644 100644 2e55aaeee3fe277e0d20a2e84e103d59ffd8a421 571a3cd9ecce6a1cd664f6da8d9f9f591c01d4b8 M	launchconfig.yml
